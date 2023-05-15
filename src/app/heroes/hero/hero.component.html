@@ -1,0 +1,39 @@
+<h1>{{ name }}</h1>
+<dl>
+  <td>Nombre de la Cerveza</td>
+  <dd>{{ name3 }}</dd>
+
+    <td>Tiempo de Añejamiento</td>
+  <dd>{{ name1 }}</dd>
+
+    <td>Correo</td>
+  <dd>telefono</dd>
+
+    <td>celular</td>
+  <dd>Fecha de  nacimiento</dd>
+
+      <td>Método de Preparación:</td>
+  <dd>{{ getHeroDescription()}} </dd>
+
+      <td>Capitalizado:</td>
+  <dd>{{capitalizeName}} </dd>
+
+</dl>
+
+<button
+*ngIf="name!=='Cerveza Clum Premium'"
+(click)="changeHero()
+" class="btn btn-primary mx-2">
+  Cambiar Nombre
+</button>
+<button
+*ngIf="age!==25"
+(click)="changeAge()"
+class="btn btn-primary">
+  Cambiar edad
+</button>
+<button
+(click)="resetForm()"
+class="btn btn-primary mx-2">
+ Reset
+</button>

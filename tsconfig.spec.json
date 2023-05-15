@@ -8,7 +8,7 @@
     ]
   },
   "include": [
-    "src/**/*.spec.ts",
-    "src/**/*.d.ts"
+    "src/**/*.spec.ts",///archivos de pruebas
+    "src/**/*.d.ts"///defincion  de  tyscript
   ]
 }
